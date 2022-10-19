@@ -59,7 +59,7 @@ $$
 
 where the $n$ is a number of data, $x$ is sample/feature and $y$ target/predicted
 
-## 2. Contact
+## Contact
 :email: auliakhalqillah.mail@gmail.com
 
 ## References:
