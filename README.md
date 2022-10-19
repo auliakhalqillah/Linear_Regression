@@ -1,6 +1,8 @@
 # Linear Regression
 
-## 1. Introduction
+## Introduction
+
+### Gradient Descent Algorithm
 
 Linear regression is a method to predict the expectation result/target (Y) based on an initial model and a sample feature (X) that we have. The initial models are called coefficient/slope (m) and intercept (b). This relationship can be written as Equation 1 below
 
@@ -42,10 +44,25 @@ $$
 
 where the $\alpha$ is the learning rate or step size for each iteration. If alpha is small, it makes the gradient descent move smoothly. In this algorithm, the $\alpha$ and number of iterations are adjusted to 0.01 and 10000 respectively.
 
+
+### Direct Method
+
+The another linear regression method is direc method. This method will calculate the coefficient and intercept directly without error estimation as the following equation
+
+$$
+m = \frac{n (\sum xy) - (\sum x)(\sum y) }{n (\sum x^2) - (\sum x)^2}
+$$
+
+$$
+b = \frac{(\sum y) (\sum x^2) - (\sum x) (\sum xy)}{n (\sum x^2) - (\sum x)^2}
+$$
+
+where the $n$ is a number of data, $x$ is sample/feature and $y$ target/predicted
+
 ## 2. Contact
 :email: auliakhalqillah.mail@gmail.com
 
 ## References:
 
-- https://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html#cost-function
+- https://ml-cheatsheet.readthedocs.io/en/latest/linear_regression.html#
 - https://www.statisticshowto.com/probability-and-statistics/regression-analysis/find-a-linear-regression-equation/
